@@ -153,7 +153,7 @@ for idx, row in df.iterrows():
     mailto_url = f"mailto:{row['contact_email']}?subject=Application%20for%20{safe_title}&body=Hi%20Team,%0D%0AI%20am%20applying%20for%20the%20{safe_title}%20role.%20Match%20score:%20{row['score']}%25."
 
     with st.container(border=True):
-        col_main, col_action = st.columns()
+        col_main, col_action = st.columns([3, 1.3])
         
         with col_main:
             st.markdown(f"### [{row['company']}]({row['url']}) — {row['title']}  {badge}")
