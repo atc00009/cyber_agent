@@ -101,7 +101,7 @@ with st.sidebar:
     st.markdown("### ⚙️ Evaluation Rules")
     only_24h = st.checkbox("Strictly 24h Window", value=True)
     user_needs_visa = st.checkbox("Require Visa Sponsorship", value=True)
-    min_score = st.slider("Min Match Score (%)", 0, 100, 45)
+    min_score = st.slider("Min Match Score (%)", 0, 100, 40)  # Default lowered to 40%
     selected_domains = st.multiselect("Domains", ["SOC", "IR", "GRC"], default=["SOC", "IR", "GRC"])
     region_filter = st.selectbox("Region Filter", ["All", "Middle East", "UK", "DACH", "Australia"])
     
